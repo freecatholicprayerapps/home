@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Free Catholic Prayer Apps</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <img src="images/hero/1.jpg" class="heroImage" id="heroImage" />
+            <div class="shadow">
+                <div class="intro">
+                    <img src="images/logo.png"  id="logo" />
+                    <p>A collection of free digital Catholic prayers</p>
+                </div>
+            </div>
+        </header>
+        <section>
+            <img src="images/rosary.jpg" class="sectionImage" />
+            <div class="shadow">
+                <div class="text">
+                    <h1>The Rosary</h1>
+                    <p>The Catholic rosary including the 4 mysteries.</p>
+                    <a href="https://stevenraysimon.github.io/rosary/" title="Go" class="button">Go</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <img src="images/divineMercy.jpg" class="sectionImage" />
+            <div class="shadow">
+                <div class="text">
+                    <h1>The Chaplet of Divine Mercy</h1>
+                    <p>The Chaplet of Divine Mercy 9 day novena given to Saint Faustina from Jesus in 1935.</p>
+                    <a href="https://stevenraysimon.github.io/divine-mercy/" title="Go" class="button">Go</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <img src="images/surrenderNovena.jpg" class="sectionImage" />
+            <div class="shadow">
+                <div class="text">
+                    <h1>The Surrender Novena</h1>
+                    <p>The Surrender Novena given to Father Ruotolo, Italian Franciscan and contemporary of St. Padre Pio, from Jesus.</p>
+                    <a href="https://stevenraysimon.github.io/surrender-prayer/" title="Go" class="button">Go</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <img src="images/holyCards.jpg" class="sectionImage" />
+            <div class="shadow">
+                <div class="text">
+                    <h1>Coming Soon: Holy Cards</h1>
+                    <p>A digital collection of prayers to popular Catholic saints</p>
+                    <a href="#" title="Go" class="button disabled">Go</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <img src="images/surrenderNovena.jpg" class="sectionImage" />
+            <div class="shadow">
+                <div class="text">
+                    <h1>Coming Soon: The Rosary Novena</h1>
+                    <p>The Catholic rosary including 27 days asking and 27 days thanksgiving to the Blessed Virgin Mary</p>
+                    <a href="#" title="Go" class="button disabled">Go</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Developed by <a href="#" title="Steven Simon">Steven Simon</a></p>
+        </footer>
+        <script>
+            // window.addEventListener('load', function () {
+
+            // });
+            document.onreadystatechange = function () {
+                if (document.readyState === "interactive") {
+
+                    let x = 1;
+                    const imgNum = 7;
+
+                    setInterval(function(){
+                        if (x >= imgNum){
+                            x=1;
+                        } else{
+                            x++;
+                        }
+                        document.getElementById('heroImage').src = 'images/hero/'+ x +'.jpg';
+                        console.log(x);
+                    }, 2000);
+                }
+            };
+        </script>
+    </body>
+</html>
